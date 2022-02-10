@@ -16,6 +16,7 @@ import Resources from "./Pages/Resources/Resources";
 import Testimonial from "./Pages/Testimonial/Testimonial";
 import Login from "./Pages/Auth/Login";
 import Dashboard from "./Pages/Dashboard/Mentee/Dashboard";
+import 'bootstrap/dist/js/bootstrap.min.js'
 
 import NavbarFun from "./Components/Navbar";
 function App() {
