@@ -5,6 +5,7 @@ import {
   Routes,
   useHistory,
 } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
@@ -15,9 +16,12 @@ import Resources from "./Pages/Resources/Resources";
 import Testimonial from "./Pages/Testimonial/Testimonial";
 import Login from "./Pages/Auth/Login";
 import Dashboard from "./Pages/Dashboard/Mentee/Dashboard";
+
+import NavbarFun from "./Components/Navbar";
 function App() {
   return (
     <div className="App">
+      <NavbarFun />
       <Router>
         <Routes>
           <Route path="/login" element={<Login />}></Route>
