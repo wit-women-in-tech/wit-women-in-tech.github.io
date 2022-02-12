@@ -16,7 +16,7 @@ import Resources from "./Pages/Resources/Resources";
 import Testimonial from "./Pages/Testimonial/Testimonial";
 import Login from "./Pages/Auth/Login";
 import Dashboard from "./Pages/Dashboard/Mentee/Dashboard";
-import 'bootstrap/dist/js/bootstrap.min.js'
+import "bootstrap/dist/js/bootstrap.min.js";
 
 import NavbarFun from "./Components/Navbar";
 function App() {
@@ -25,6 +25,7 @@ function App() {
       <NavbarFun />
       <Router>
         <Routes>
+          <Route path="/" element={<Home />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/home" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>

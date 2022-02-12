@@ -1,0 +1,51 @@
+.events-head {
+  padding-top: 100px;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: freestyle;
+}
+.events {
+  background: #ebf5fc;
+}
+.events-main {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #ebf5fc;
+  .event-card {
+    width: 620px;
+    margin: 20px;
+    padding: 40px 30px;
+    background: #ebf5fc;
+    font-family: "Roboto Slab", serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+      6px 6px 20px rgba(0, 0, 0, 0.1);
+    .event-img {
+      img {
+        width: 100%;
+      }
+    }
+    .event-content {
+      text-align: center;
+      .event-details {
+        padding: 10px;
+        .event-time {
+          span {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .event-card {
+      display: grid;
+      grid-template-columns: auto;
+      width: 450px;
+    }
+  }
+}
