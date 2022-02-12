@@ -16,6 +16,7 @@ import Resources from "./Pages/Resources/Resources";
 import Testimonial from "./Pages/Testimonial/Testimonial";
 import Login from "./Pages/Auth/Login";
 import Dashboard from "./Pages/Dashboard/Mentee/Dashboard";
+import Event from "./Pages/Events/Event";
 import "bootstrap/dist/js/bootstrap.min.js";
 
 import NavbarFun from "./Components/Navbar";
@@ -32,6 +33,7 @@ function App() {
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/team" element={<Team />}></Route>
           <Route path="/events" element={<Events />}></Route>
+          <Route path="/events/:id" element={<Event />}></Route>
           <Route path="/resources" element={<Resources />}></Route>
           <Route path="/testimonial" element={<Testimonial />}></Route>
           <Route path="/dashboard" element={<Dashboard />}></Route>

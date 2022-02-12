@@ -1,0 +1,18 @@
+.event {
+  padding-top: 100px;
+  .event-single-head {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: freestyle;
+  }
+  .event-single-main {
+    display: flex;
+    padding: 30px;
+    img {
+      height: 400px;
+    }
+    .event-single-right {
+      padding: 20px;
+    }
+  }
+}
