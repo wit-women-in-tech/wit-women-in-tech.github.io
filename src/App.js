@@ -24,21 +24,24 @@ function App() {
   return (
     <div className="App">
       <NavbarFun />
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/login" element={<Login />}></Route>
-          <Route path="/home" element={<Home />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/team" element={<Team />}></Route>
-          <Route path="/events" element={<Events />}></Route>
-          <Route path="/events/:id" element={<Event />}></Route>
-          <Route path="/resources" element={<Resources />}></Route>
-          <Route path="/testimonial" element={<Testimonial />}></Route>
-          <Route path="/dashboard" element={<Dashboard />}></Route>
-        </Routes>
-      </Router>
+
+      <div className="app_main">
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/login" element={<Login />}></Route>
+            <Route path="/home" element={<Home />}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/contact" element={<Contact />}></Route>
+            <Route path="/team" element={<Team />}></Route>
+            <Route path="/events" element={<Events />}></Route>
+            <Route path="/events/:id" element={<Event />}></Route>
+            <Route path="/resources" element={<Resources />}></Route>
+            <Route path="/testimonial" element={<Testimonial />}></Route>
+            <Route path="/dashboard" element={<Dashboard />}></Route>
+          </Routes>
+        </Router>
+      </div>
     </div>
   );
 }
