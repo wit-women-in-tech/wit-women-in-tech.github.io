@@ -1,8 +1,11 @@
 .App {
   text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.app_main{
+.app_main {
   margin-top: 70px;
 }
 

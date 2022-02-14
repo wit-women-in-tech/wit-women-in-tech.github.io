@@ -6,7 +6,9 @@ import { Link } from "react-router-dom";
 export default function Events() {
   return (
     <div className="events">
-      <div className="events-head">EVENTS</div>
+      <div className="events-head">
+        <div>EVENTS</div>
+      </div>
       <div className="events-main">
         <div className="event-card">
           <div className="event-img">

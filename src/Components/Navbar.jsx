@@ -1,8 +1,10 @@
 import React from "react";
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
-import { Link, NavLink } from "react-router-dom";
+import { Navbar, Container, Nav, NavDropdown, Button } from "react-bootstrap";
+import { Link, useNavigate } from "react-router-dom";
 import Logo from "../Images/logo.png";
+import "./Navbar.scss";
 export default function NavbarFun() {
+  const navigate = useNavigate();
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" bg="light" fixed="top">
@@ -13,12 +15,42 @@ export default function NavbarFun() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/about">About</Nav.Link>
-              <Nav.Link href="/events">Events</Nav.Link>
-              <Nav.Link href="/team">Team</Nav.Link>
-              <Nav.Link href="/testimonial">Testimonial</Nav.Link>
-              <Nav.Link href="/resources">Resources</Nav.Link>
-              <Nav.Link href="/contact">Contact</Nav.Link>
+              <Link className="nav-link-my" to="/about">
+                About
+              </Link>
+              <Link className="nav-link-my" to="/events">
+                Events
+              </Link>
+              <Link className="nav-link-my" to="/team">
+                Team
+              </Link>
+              <Link className="nav-link-my" to="/testimonial">
+                Testimonial
+              </Link>
+              <Link className="nav-link-my" to="/resources">
+                Resources
+              </Link>
+              <Link className="nav-link-my" to="/contact">
+                Contact
+              </Link>
+            </Nav>
+            <Nav>
+              <Button
+                className="button-nav"
+                onClick={() => {
+                  navigate("/register");
+                }}
+              >
+                REGISTER
+              </Button>
+              <Button
+                className="button-nav"
+                onClick={() => {
+                  navigate("/login");
+                }}
+              >
+                LOGIN
+              </Button>
             </Nav>
           </Navbar.Collapse>
         </Container>

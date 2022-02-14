@@ -17,18 +17,19 @@ import Testimonial from "./Pages/Testimonial/Testimonial";
 import Login from "./Pages/Auth/Login";
 import Dashboard from "./Pages/Dashboard/Mentee/Dashboard";
 import Event from "./Pages/Events/Event";
+import Register from "./Pages/Auth/Register";
 import "bootstrap/dist/js/bootstrap.min.js";
 
 import NavbarFun from "./Components/Navbar";
 function App() {
   return (
     <div className="App">
-      <NavbarFun />
-
-      <div className="app_main">
-        <Router>
+      <Router>
+        <NavbarFun />
+        <div className="app_main">
           <Routes>
             <Route path="/" element={<Home />}></Route>
+            <Route path="/register" element={<Register />}></Route>
             <Route path="/login" element={<Login />}></Route>
             <Route path="/home" element={<Home />}></Route>
             <Route path="/about" element={<About />}></Route>
@@ -40,8 +41,8 @@ function App() {
             <Route path="/testimonial" element={<Testimonial />}></Route>
             <Route path="/dashboard" element={<Dashboard />}></Route>
           </Routes>
-        </Router>
-      </div>
+        </div>
+      </Router>
     </div>
   );
 }

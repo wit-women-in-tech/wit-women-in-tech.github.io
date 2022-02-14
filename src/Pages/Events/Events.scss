@@ -1,7 +1,6 @@
 @import "../../../styles/_box-shadow.scss";
 .events-head {
-  padding-top: 100px;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 600;
   font-family: freestyle;
 }
@@ -26,7 +25,7 @@
     grid-template-columns: 1fr 1fr;
     // box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
     //   6px 6px 20px rgba(0, 0, 0, 0.1);
-    box-shadow:$BoxShadow;
+    box-shadow: $BoxShadow;
     .event-img {
       img {
         width: 100%;
