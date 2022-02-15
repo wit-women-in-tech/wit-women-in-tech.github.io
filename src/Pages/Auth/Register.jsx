@@ -22,10 +22,12 @@ export default function Register() {
     try {
       const data = await axios.post(
         `https://wit-backend.herokuapp.com/auth/register`,
+        //"http://localhost:5000/auth/register",
         user
       );
-      console.log(data);
+      console.log(data.data);
       localStorage.setItem("emailId", data.data.result.emailId);
+      localStorage.setItem("token", data.data.token);
       navigate("/");
     } catch (err) {
       console.log(err);

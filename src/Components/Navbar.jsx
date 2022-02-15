@@ -34,24 +34,46 @@ export default function NavbarFun() {
                 Contact
               </Link>
             </Nav>
-            <Nav>
-              <Button
-                className="button-nav"
-                onClick={() => {
-                  navigate("/register");
-                }}
-              >
-                REGISTER
-              </Button>
-              <Button
-                className="button-nav"
-                onClick={() => {
-                  navigate("/login");
-                }}
-              >
-                LOGIN
-              </Button>
-            </Nav>
+            {localStorage.getItem("token") ? (
+              <Nav>
+                <Button
+                  className="button-nav"
+                  onClick={() => {
+                    navigate("/dashboard");
+                  }}
+                >
+                  DASHBOARD
+                </Button>
+                <Button
+                  className="button-nav"
+                  onClick={() => {
+                    localStorage.removeItem("token");
+                    navigate("/");
+                  }}
+                >
+                  LOGOUT
+                </Button>
+              </Nav>
+            ) : (
+              <Nav>
+                <Button
+                  className="button-nav"
+                  onClick={() => {
+                    navigate("/register");
+                  }}
+                >
+                  REGISTER
+                </Button>
+                <Button
+                  className="button-nav"
+                  onClick={() => {
+                    navigate("/login");
+                  }}
+                >
+                  LOGIN
+                </Button>
+              </Nav>
+            )}
           </Navbar.Collapse>
         </Container>
       </Navbar>
