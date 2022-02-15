@@ -4,6 +4,7 @@ import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export default function Events() {
+  const id = "1";
   return (
     <div className="events">
       <div className="events-head">
@@ -24,7 +25,7 @@ export default function Events() {
               <p>
                 Hey everyone, Hope you are enjoying this question series.✨ So
                 this week will be dedicated to Stack and Queue....
-                <Link to="/">View More</Link>
+                <Link to={"/events/" + id}>View More</Link>
               </p>
               <div className="event-time">
                 <div>

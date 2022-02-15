@@ -6,6 +6,7 @@ import {
   useHistory,
 } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "font-awesome/css/font-awesome.min.css";
 
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";

@@ -9,8 +9,10 @@ export default function NavbarFun() {
     <div>
       <Navbar collapseOnSelect expand="lg" bg="light" fixed="top">
         <Container>
-          <Navbar.Brand href="/">
-            <img src={Logo} height="40px"></img>
+          <Navbar.Brand>
+            <Link to="/">
+              <img src={Logo} height="40px"></img>
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -36,15 +38,20 @@ export default function NavbarFun() {
             </Nav>
             {localStorage.getItem("token") ? (
               <Nav>
-                <Button
+                <button
+                  style={{ border: "none", background: "none", padding: "0px" }}
                   className="button-nav"
                   onClick={() => {
                     navigate("/dashboard");
                   }}
                 >
-                  DASHBOARD
-                </Button>
+                  <img
+                    height="40px"
+                    src="https://openclipart.org/download/247319/abstract-user-flat-3.svg"
+                  ></img>
+                </button>
                 <Button
+                  variant="outline-danger"
                   className="button-nav"
                   onClick={() => {
                     localStorage.removeItem("token");
@@ -57,6 +64,7 @@ export default function NavbarFun() {
             ) : (
               <Nav>
                 <Button
+                  variant="outline-secondary"
                   className="button-nav"
                   onClick={() => {
                     navigate("/register");
@@ -65,6 +73,7 @@ export default function NavbarFun() {
                   REGISTER
                 </Button>
                 <Button
+                  variant="outline-secondary"
                   className="button-nav"
                   onClick={() => {
                     navigate("/login");
