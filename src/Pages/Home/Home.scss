@@ -1,56 +1,29 @@
 .home {
-  height: 100vh;
   width: 100vw;
-  overflow: hidden;
-}
-.main-background {
-  background: linear-gradient(#ffd8b9, #ffd6f1);
-  height: 200vh;
-  width: 100vw;
-  margin-top: -50vh;
-  margin-left: -50vw;
-  border-radius: 50%;
   position: relative;
+  justify-content: center;
+}
+.home-img {
+  width: 100%;
+  position: absolute;
   overflow: hidden;
+  img {
+    width: 100%;
+  }
 }
 
-.main {
-  z-index: 2;
-  height: 100%;
-  width: 100%;
-}
-.nav {
-  background-color: rgb(61, 61, 61);
-  color: #ffd6f1;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 50px;
+.home-v {
   position: absolute;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.home-main {
-  top: 0;
-  left: 0;
-  font-size: 60px;
+  width: 100%;
+  background: url("../../Images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  font-size: 80px;
+  color: white;
   font-weight: 700;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  .home-left {
-    width: 50%;
-  }
-  .home-right {
-    width: 50%;
-    img {
-      height: 100%;
-      top: 0;
-    }
+  align-self: center;
+  div {
+    margin-top: 10vh;
   }
 }

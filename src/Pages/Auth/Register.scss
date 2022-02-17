@@ -8,9 +8,15 @@
 .register {
   background: $lightPink;
   min-height: 90vh;
+  background: url("../../Images/background.png");
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .register-main {
-  width: 100%;
+  min-width: 600px;
+  min-height: 80vh;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -21,6 +27,9 @@
     box-shadow: $BoxShadow;
     margin-top: 20px;
     padding: 20px;
+    min-width: 600px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
   }
 }
 
@@ -35,4 +44,26 @@
 .register-button {
   width: 150px;
   justify-self: center;
+}
+
+.register-main1 {
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: $BoxShadow;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  max-width: 800px;
+  padding: 30px;
+  border-radius: 20px;
+  form {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 20px;
+    min-width: 600px;
+    border-radius: 20px;
+  }
 }

@@ -35,9 +35,9 @@ export default function Register() {
   };
   return (
     <div className="register">
-      <div className="register-main">
+      <div className="register-main1">
+        <div className="register-head">REGISTER</div>
         <form>
-          <div className="register-head">REGISTER</div>
           <input
             className="register-input"
             type="text"
@@ -110,15 +110,15 @@ export default function Register() {
               setUser({ ...user, password: e.target.value });
             }}
           ></input>
-          <Button
-            className="register-button"
-            onClick={() => {
-              submit();
-            }}
-          >
-            Register
-          </Button>
         </form>
+        <Button
+          className="register-button"
+          onClick={() => {
+            submit();
+          }}
+        >
+          Register
+        </Button>
       </div>
     </div>
   );

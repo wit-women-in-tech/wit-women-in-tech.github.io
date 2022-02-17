@@ -29,7 +29,7 @@ export default function Login() {
     <div className="register">
       <div className="register-main">
         <form>
-          <div className="register-head">REGISTER</div>
+          <div className="register-head">LOGIN</div>
           <input
             className="register-input"
             type="text"
@@ -55,7 +55,7 @@ export default function Login() {
               submit();
             }}
           >
-            Register
+            Login
           </Button>
         </form>
       </div>
