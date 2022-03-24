@@ -11,7 +11,7 @@ export default function Events() {
         <div>EVENTS</div>
       </div>
       <div className="events-main">
-        <div className="event-card">
+        <div className="event-card" data-aos="zoom-out">
           <div className="event-img">
             <img
               src="https://i.ibb.co/fXK1dVD/sarthak-sir-session.png"
@@ -22,11 +22,6 @@ export default function Events() {
           <div className="event-content">
             <h2>WEB DEVELOPMENT</h2>
             <div className="event-details">
-              <p>
-                Hey everyone, Hope you are enjoying this question series.✨ So
-                this week will be dedicated to Stack and Queue....
-                <Link to={"/events/" + id}>View More</Link>
-              </p>
               <div className="event-time">
                 <div>
                   <span>DATE: </span>20 FEB 2022
@@ -39,7 +34,7 @@ export default function Events() {
             <Button>Register</Button>
           </div>
         </div>
-        <div className="event-card">
+        <div className="event-card" data-aos="zoom-out">
           <div className="event-img">
             <img
               src="https://i.ibb.co/fXK1dVD/sarthak-sir-session.png"
@@ -50,11 +45,6 @@ export default function Events() {
           <div className="event-content">
             <h2>WEB DEVELOPMENT</h2>
             <div className="event-details">
-              <p>
-                Hey everyone, Hope you are enjoying this question series.✨ So
-                this week will be dedicated to Stack and Queue....
-                <Link to="/">View More</Link>
-              </p>
               <div className="event-time">
                 <div>
                   <span>DATE: </span>20 FEB 2022
@@ -67,7 +57,7 @@ export default function Events() {
             <Button>Register</Button>
           </div>
         </div>
-        <div className="event-card">
+        <div className="event-card" data-aos="zoom-out">
           <div className="event-img">
             <img
               src="https://i.ibb.co/fXK1dVD/sarthak-sir-session.png"
@@ -78,11 +68,6 @@ export default function Events() {
           <div className="event-content">
             <h2>WEB DEVELOPMENT</h2>
             <div className="event-details">
-              <p>
-                Hey everyone, Hope you are enjoying this question series.✨ So
-                this week will be dedicated to Stack and Queue....
-                <Link to="/">View More</Link>
-              </p>
               <div className="event-time">
                 <div>
                   <span>DATE: </span>20 FEB 2022
@@ -95,7 +80,7 @@ export default function Events() {
             <Button>Register</Button>
           </div>
         </div>
-        <div className="event-card">
+        <div className="event-card" data-aos="zoom-out">
           <div className="event-img">
             <img
               src="https://i.ibb.co/fXK1dVD/sarthak-sir-session.png"
@@ -106,11 +91,6 @@ export default function Events() {
           <div className="event-content">
             <h2>WEB DEVELOPMENT</h2>
             <div className="event-details">
-              <p>
-                Hey everyone, Hope you are enjoying this question series.✨ So
-                this week will be dedicated to Stack and Queue....
-                <Link to="/">View More</Link>
-              </p>
               <div className="event-time">
                 <div>
                   <span>DATE: </span>20 FEB 2022
@@ -123,7 +103,7 @@ export default function Events() {
             <Button>Register</Button>
           </div>
         </div>
-        <div className="event-card">
+        <div className="event-card" data-aos="zoom-out">
           <div className="event-img">
             <img
               src="https://i.ibb.co/fXK1dVD/sarthak-sir-session.png"
@@ -134,11 +114,6 @@ export default function Events() {
           <div className="event-content">
             <h2>WEB DEVELOPMENT</h2>
             <div className="event-details">
-              <p>
-                Hey everyone, Hope you are enjoying this question series.✨ So
-                this week will be dedicated to Stack and Queue....
-                <Link to="/">View More</Link>
-              </p>
               <div className="event-time">
                 <div>
                   <span>DATE: </span>20 FEB 2022

@@ -5,7 +5,10 @@
   font-family: freestyle;
 }
 .events {
-  background: #ffd6f1;
+  //background: #ffd6f1;
+  //background: #e65177;
+  //background: #ef91ff;
+  padding: 20px;
 }
 .events-main {
   position: relative;
@@ -13,26 +16,26 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  background: #ffd6f1;
   .event-card {
-    width: 620px;
+    width: 320px;
     margin: 20px;
-    padding: 40px 30px;
+    padding: 20px;
     background: #fff;
     border-radius: 15px;
     font-family: "Roboto Slab", serif;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
     // box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
     //   6px 6px 20px rgba(0, 0, 0, 0.1);
     box-shadow: $BoxShadow;
     .event-img {
       img {
         width: 100%;
+        border-radius: 15px;
       }
     }
     .event-content {
       text-align: center;
+      padding: 10px 30px;
       .event-details {
         padding: 10px;
         .event-time {
@@ -40,6 +43,10 @@
             font-weight: 700;
           }
         }
+      }
+      h2 {
+        font-size: 22px;
+        font-weight: 600;
       }
     }
   }
