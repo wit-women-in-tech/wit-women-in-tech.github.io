@@ -16,12 +16,16 @@
   .out-home {
     height: 100%;
     justify-content: center;
-    margin-top: 50%;
+    margin-top: 40%;
     margin-left: 30%;
     transform: translate(-20%, -30%);
     div {
       font-size: 50px;
       font-weight: 700;
+    }
+    p {
+      margin-top: 10%;
+      margin-bottom: 5%;
     }
   }
 }
@@ -51,6 +55,10 @@
     }
   }
 }
+.but-join {
+  font-size: 20px;
+  min-width: 100px;
+}
 
 .stats {
   background: linear-gradient(
@@ -74,17 +82,72 @@
   }
   span {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 30% 20% 30% 20%;
     color: #2e54d6;
     font-weight: 700;
     margin-top: 50px;
-
+    margin-bottom: 30px;
     .stat {
       div {
         font-size: 40px;
       }
       .stat-about {
         font-size: 30px;
+      }
+    }
+  }
+}
+
+.team {
+  .team-head {
+    color: rgba(255, 119, 204, 1);
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 84px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .members {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    .member {
+      width: 400px;
+      height: 200px;
+      display: grid;
+      grid-template-columns: 40% 60%;
+      padding: 20px;
+      background: linear-gradient(
+        267.15deg,
+        rgba(254, 53, 186, 0.13) 0.8%,
+        rgba(253, 83, 198, 0.286781) 100%
+      );
+      background: rgb(243, 243, 243);
+      border-radius: 20px;
+      .member-img {
+        width: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .member-detail {
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        font-size: 25px;
+        margin-top: 65px;
+        .member-name {
+          font-weight: 700;
+        }
+        .member-pos {
+          font-size: 20px;
+        }
       }
     }
   }
@@ -111,6 +174,12 @@
 
 .footer {
   background: url("../../Images/footer.svg");
+  background: rgba(255, 119, 204, 1);
+  background: linear-gradient(
+    267.15deg,
+    rgba(254, 53, 186, 0.13) 0.8%,
+    rgba(253, 83, 198, 0.286781) 100%
+  );
 }
 .footer-div {
   display: grid;
@@ -137,6 +206,9 @@
       }
     }
   }
+}
+.rights {
+  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 500px) {

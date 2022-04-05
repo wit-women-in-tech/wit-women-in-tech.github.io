@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.scss";
-import { Accordion } from "react-bootstrap";
+import { Accordion, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 import Background from "../../Images/background.png";
 import HomeV from "../../Images/home-v.svg";
@@ -13,6 +14,9 @@ import Logo from "../../Images/logo.png";
 import LinkedIn from "../../Images/linkedIn.png";
 import Instagram from "../../Images/Instagram.jpg";
 import Youtube from "../../Images/youtube.png";
+import Left from "../../Images/left.svg";
+import Right from "../../Images/right.svg";
+import Github from "../../Images/github.png";
 
 export default function Home() {
   return (
@@ -27,6 +31,11 @@ export default function Home() {
             incidunt, quos, odio earum pariatur necessitatibus blanditiis
             officia adipisci corporis dolor quis explicabo.
           </p>
+          <Link to="/register">
+            <Button className="but-join" variant="outline-dark">
+              Join Us
+            </Button>
+          </Link>
         </div>
       </div>
       <div className="about">
@@ -53,13 +62,14 @@ export default function Home() {
             <div>200+</div>
             <div className="stat-about">community members</div>
           </div>
-          <div className="stat">
-            <div>200+</div>
-            <div className="stat-about">offers and scholarship bagged</div>
-          </div>
+
           <div className="stat">
             <div>200+</div>
             <div className="stat-about">companies</div>
+          </div>
+          <div className="stat">
+            <div>200+</div>
+            <div className="stat-about">offers and scholarship bagged</div>
           </div>
           <div className="stat">
             <div>22,00,000+</div>
@@ -67,7 +77,21 @@ export default function Home() {
           </div>
         </span>
       </div>
-      <div className="team"></div>
+      <div className="team">
+        <div className="team-head">Meet our team</div>
+        <div className="members">
+          <div className="member">
+            <div className="member-img">
+              <img src={Instagram}></img>
+            </div>
+            <div className="member-detail">
+              <div className="member-name">Anshika Jain</div>
+              <div className="member-pos">Intern at SAP</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr></hr>
       <div className="faq">
         <div>
           <img src={Faq}></img>
@@ -151,6 +175,9 @@ export default function Home() {
               </a>
               <a>
                 <img src={Youtube}></img>
+              </a>
+              <a>
+                <img src={Github}></img>
               </a>
             </div>
           </div>
