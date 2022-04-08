@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.scss";
 import { Accordion, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 import Background from "../../Images/background.png";
 import HomeV from "../../Images/home-v.svg";
@@ -19,6 +20,19 @@ import Right from "../../Images/right.svg";
 import Github from "../../Images/github.png";
 
 export default function Home() {
+  const [members, setMembers] = useState();
+  const getMembers = async () => {
+    try {
+      const data = await axios.get("http://localhost:5000/team/getMembers");
+      console.log(data.data);
+      setMembers(data.data);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+  useEffect(() => {
+    getMembers();
+  }, []);
   return (
     <div className="home">
       <div className="home-v">
@@ -80,15 +94,23 @@ export default function Home() {
       <div className="team">
         <div className="team-head">Meet our team</div>
         <div className="members">
-          <div className="member">
-            <div className="member-img">
-              <img src={Instagram}></img>
-            </div>
-            <div className="member-detail">
-              <div className="member-name">Anshika Jain</div>
-              <div className="member-pos">Intern at SAP</div>
-            </div>
-          </div>
+          {members ? (
+            members.map((e) => {
+              return (
+                <div className="member">
+                  <div className="member-img">
+                    <img src={e.imageUrl}></img>
+                  </div>
+                  <div className="member-detail">
+                    <div className="member-name">{e.name}</div>
+                    <div className="member-pos">{e.status}</div>
+                  </div>
+                </div>
+              );
+            })
+          ) : (
+            <></>
+          )}
         </div>
       </div>
       <hr></hr>

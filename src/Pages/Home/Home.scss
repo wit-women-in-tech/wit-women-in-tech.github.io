@@ -112,6 +112,7 @@
   .members {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     padding: 30px;
     .member {
       width: 400px;
@@ -119,6 +120,7 @@
       display: grid;
       grid-template-columns: 40% 60%;
       padding: 20px;
+      margin: 10px;
       background: linear-gradient(
         267.15deg,
         rgba(254, 53, 186, 0.13) 0.8%,
