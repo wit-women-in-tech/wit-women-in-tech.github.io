@@ -5,39 +5,33 @@
   font-family: freestyle;
 }
 .events {
-  //background: #ffd6f1;
-  //background: #e65177;
-  //background: #ef91ff;
   padding: 20px;
 }
 .events-main {
   position: relative;
   display: flex;
   justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
   .event-card {
-    width: 320px;
+    text-align: left;
+    display: flex;
+    max-width: 600px;
     margin: 20px;
     padding: 20px;
     background: #fff;
     border-radius: 15px;
     font-family: "Roboto Slab", serif;
-
-    // box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
-    //   6px 6px 20px rgba(0, 0, 0, 0.1);
     box-shadow: $BoxShadow;
     .event-img {
       img {
-        width: 100%;
+        width: 250px;
         border-radius: 15px;
       }
     }
     .event-content {
-      text-align: center;
-      padding: 10px 30px;
+      padding: 10px 25px;
       .event-details {
-        padding: 10px;
+        padding-top: 10px;
         .event-time {
           span {
             font-weight: 700;
@@ -50,6 +44,14 @@
       }
     }
   }
+  .days-left {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    img {
+      height: 20px;
+      margin-right: 15px;
+    }
+  }
   @media only screen and (max-width: 600px) {
     .event-card {
       display: grid;
@@ -59,6 +61,6 @@
     .events-head {
       padding-top: 50px;
       font-size: 30px;
-  }
+    }
   }
 }

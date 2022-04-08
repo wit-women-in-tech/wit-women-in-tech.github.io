@@ -230,3 +230,10 @@
     flex-direction: column;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .footer-div {
+    display: flex;
+    flex-direction: column;
+  }
+}

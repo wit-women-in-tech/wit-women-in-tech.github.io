@@ -1,18 +1,46 @@
 import React from "react";
 import "./Event.scss";
+import { Button } from "react-bootstrap";
+import axios from "axios";
 
 export default function Event() {
+  // const registerEvent = async () => {
+  //   try {
+  //     if (localStorage.getItem("emailId")) {
+  //       const data = await axios.get(
+  //         `http://localhost:5000/getUser/${localStorage.getItem("emailId")}`
+  //       );
+  //       console.log(data.data[0]);
+  //     } else {
+  //     }
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // };
   return (
     <div className="event">
-      <div className="event-single-head">TITLE</div>
+      <div className="event-single-head">WEB DEVELOPMENT</div>
       <div className="event-single-main">
-        <img
-          src="https://i.ibb.co/fXK1dVD/sarthak-sir-session.png"
-          alt="sarthak-sir-session"
-          border="0"
-        />
+        <div>
+          <img
+            src="https://i.ibb.co/fXK1dVD/sarthak-sir-session.png"
+            alt="sarthak-sir-session"
+            border="0"
+          />
+          <div className="event-details">
+            <div className="event-time">
+              <div>
+                <span>DATE: </span>20 FEB 2022
+              </div>
+              <div>
+                <span>TIME: </span>5:00PM onwards
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="event-single-right">
           <div className="event-description">
+            <h2>Description :</h2>
             Hi everyone!! WIT++ is glad to announce a session on web
             development.😌✨ An incoming SDE at Amazon, Sarthak Mittal, pursuing
             his graduation from NIT Kurukshetra in Information technology will
@@ -28,6 +56,18 @@ export default function Event() {
             questions you want the speaker to address. P.S.- This session is
             open to all.
           </div>
+          <div className="event-speaker">
+            <h2>Speaker :</h2>
+            Sarthak Mittal
+          </div>
+          <a
+            target="_blank"
+            href="https://docs.google.com/forms/d/1D-SaYu-1rWGx8OD7sB6ow5KjhR_6L0YrN9vN9cenjPs/edit?ts=61eebcb2#response=ACYDBNgH0HnV8RWttMjLcX5X2w4LmqXvuLfXTzvv-xv-i940MS6Y7HfurM9kYNWHpw"
+          >
+            <Button className="but-event" variant="secondary">
+              Register
+            </Button>
+          </a>
         </div>
       </div>
     </div>
